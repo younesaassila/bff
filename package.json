@@ -1,0 +1,46 @@
+{
+  "name": "bff",
+  "version": "0.0.1",
+  "description": "Brainfuck, friendlier.",
+  "keywords": [
+    "brainfuck",
+    "typescript"
+  ],
+  "homepage": "https://github.com/younesaassila/bff#readme",
+  "bugs": {
+    "url": "https://github.com/younesaassila/bff/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/younesaassila/bff.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "author": "Younes Aassila <contact@aassila.com> (https://younesaassila.com/)",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./std": "./dist/std/index.mjs",
+    "./package.json": "./package.json"
+  },
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "node --test \"test/**/*.test.ts\"",
+    "typecheck": "tsc --noEmit",
+    "format": "prettier . --write"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "prettier": "3.9.10",
+    "prettier-plugin-organize-imports": "^4.3.0",
+    "tsdown": "^0.23.7",
+    "typescript": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=22"
+  }
+}
