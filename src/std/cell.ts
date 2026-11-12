@@ -1,9 +1,9 @@
-import type { BFF, Count } from "../BFF.ts";
+import type { BFF, IntOrChar } from "../BFF.ts";
 
 export const cell = (bff: BFF) => {
   const clear = (): string => bff.loop(() => bff.dec());
 
-  const set = (n: Count): string => clear() + bff.inc(n);
+  const set = (n: IntOrChar): string => clear() + bff.inc(n);
 
   const move = (to: number | number[]): string => {
     if (!Array.isArray(to)) {

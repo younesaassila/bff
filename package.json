@@ -1,10 +1,10 @@
 {
-  "name": "bff",
+  "name": "bff-js",
   "version": "0.0.1",
-  "description": "Brainfuck, friendlier.",
+  "description": "Brainfuck Friendly Frontend",
   "keywords": [
     "brainfuck",
-    "typescript"
+    "domain-specific-language"
   ],
   "homepage": "https://github.com/younesaassila/bff#readme",
   "bugs": {

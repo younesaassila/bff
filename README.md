@@ -1,8 +1,8 @@
 # bff
 
-Brainfuck, friendlier.
+Brainfuck Friendly Frontend
 
-## API
+## Interface
 
 ### `inc(n: int | char = 1)`
 
@@ -28,7 +28,7 @@ Output the byte at the data pointer.
 
 Accept one byte of input, storing its value in the byte at the data pointer.
 
-### `loop(f: function)`
+### `loop(f: function<BFF, void>)`
 
 Run the function `f` while the byte at the data pointer is nonzero.
 
